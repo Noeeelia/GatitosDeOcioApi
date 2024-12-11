@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐾Gatitos de Ocio😻</title>
+  <link rel="icon" href="ruta/al/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="logo"><img src="./image/logo (3).png" alt=""></div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#home" class="nav-link active">Inicio</a></li>
+        <li><a href="#content" class="nav-link">Contenido</a></li>
+        <li><a href="#cat-facts" class="nav-link">Curiosidades</a></li>
+        <li><a href="#api-section" class="nav-link">Gatitos</a></li>
+        <li><a href="#form" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Principal -->
+  <section id="home">
+    <div class="home-container">
+      <div class="home-text">
+        <h1><strong>Bienvenid😻s a este rinconcito gatuno</strong></h1>
+        <h3>Imagenes aleatorias y data de Gatitos🐾.</h3>
+        <p>Un lugarsito de ternura para Ocio </p>
+        <a href="#cat-facts" class="home-btn-inactive">¡Ver Curiosidades!</a>
+        <a href="#api-section" class="home-btn-active">¡Ver Gatitos!</a>
+      </div>
+      <div class="home-image">
+        <img id="cat-portada" src="./image/joyful-cats-with-sunglasses.png" alt="3 gatos chetos">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contenido -->
+  <section id="content">
+    <div class="cat-day-reminder">
+      <div class="cat-day-content">
+        <div class="cat-day-text">
+          <span class="cat-day-icon">🎉🎁🎉</span>
+          <h3>¡Día Internacional del Gato!</h3>
+          <p>8 de Agosto</p>
+        </div>
+        <div class="cat-day-logo">
+          <img src="./image/logo (3).png" alt="">
+        </div>
+      </div>
+    </div>
+    <h2>¿Te gustaría pasar un buen rato viendo a los gatitos más adorables del mundo?</h2>
+     <h2>¡Estás en el lugar indicado!</h2>
+    <div class="content-wrapper">
+      <div class="content-section2">
+        <span class="icon"><img src="image/gato.png" alt=""></span>
+        <p>En Gatitos de Ocio, te traemos imágenes aleatorias de estos pequeños peluditos que seguro te sacarán una sonrisa. Solo tienes que hacer clic y dejarte sorprender por lo lindos y traviesos que pueden ser.</p>
+      </div>
+      <div class="content-section2">
+        <span class="icon"><img src="image/pata.png" alt=""></span>
+        <p>Nuestro objetivo es simple: proporcionarte momentos de felicidad mientras exploras nuestro sitio y te encuentras con la ternura más pura. Desde gatitos jugando hasta adorables muecas, siempre habrá algo para alegrarte el día.</p>
+      </div>
+      <div class="content-section2">
+        <span class="icon"><img src="image/gato (1).png" alt=""></span>
+        <p>No solo es un lugar para disfrutar de la belleza de los gatos, sino también una página para desconectar del estrés diario y sumergirte en un mundo lleno de amor y diversión. Ven a relajarte y ¡disfruta de todos los gatitos que tenemos para ti!.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Curiosidades -->
+<section id="cat-facts">
+  <h2>Curiosidades Gatunas 🐾</h2>
+  <p class="cat-facts-intro">¡Descubre el Oráculo Gatuno! Haz clic para revelar secretos felinos</p>
+  <div class="oracle-container">
+    <div class="oracle-image">
+      <img src="./image/gato-mistic.jpeg" alt="Gato místico" class="mystic-cat">
+    </div>
+    <div class="oracle-content">
+      <div class="card-container">
+        <div class="oracle-card">
+          <p id="fact-display">¿Qué secreto gatuno quieres descubrir hoy?</p>
+          <span class="icon"><img src="image/carta-de-tarot (1).png" alt=""></span>
+        </div>
+      </div>
+      <button class="fact-btn" type="button">Consultar al Oráculo Gatuno 🔮​</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Sección de API -->
+  <section id="api-section">
+    <h2>Me parece haber visto un lindo gatito😻</h2>
+      <!-- Aquí se mostrarán los datos de la API -->    
+       <div id="cat-img-container"></div>
+       <button id="btn-cat" type="button">¡Dame más Gatitos🐾!</button>
+  </section>
+
+  <!-- Sección del Formulario -->
+  <section id="form">
+    <h2>Formulario de Contacto</h2>
+    <form id="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+      <span class="error" id="name-error"></span>
+      <br>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+      <span class="error" id="email-error"></span>
+      <br>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" placeholder="Deja tu mensaje aquí..." required></textarea>
+      <span class="error" id="message-error"></span>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="form-feedback"></p>
+  </section>
+
+  <footer>
+    <div id="content-footer">
+      <p>&copy; 2024 🐾 Gatitos de Ocio | Todos los derechos reservados</p>
+      <p>Hecho con 💜 en Códroba, Argentina</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

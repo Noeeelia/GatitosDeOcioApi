@@ -1,0 +1,713 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fef5fc;
+}
+
+/* Header */
+header {
+  background: rgb(27, 27, 27);
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 2rem;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  padding: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* Menú de navegación */
+.nav-menu {
+  margin-right: 2rem;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu ul li {
+  display: inline-block;
+}
+
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-menu ul li a:hover,
+.nav-menu ul li a.active {
+  color: #f085cc;
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 1rem;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Media query para responsividad */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgb(27, 27, 27);
+    padding: 1rem 0;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-menu ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu ul li a {
+    display: block;
+    padding: 1rem;
+  }
+
+  /* Animación del menú hamburguesa */
+  .menu-toggle.active span:first-child {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:last-child {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+  
+  .logo img {
+    width: 60px;
+    height: auto;
+    padding: 5px 0;
+    transition: transform 0.3s ease;
+  }
+
+  .logo img:hover {
+    transform: scale(1.05);  /* Pequeño efecto al pasar el mouse */
+  }
+}
+/* Media query para el logo en móviles */
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 1rem;
+  }
+  
+  .logo img {
+    width: 40px;  /* Aún más pequeño en móviles */
+  }
+}
+
+/* Estilos para la sección home */
+#home {
+  padding-top: 165px; /* Espacio adicional en la parte superior */
+  padding-bottom: 25px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.home-text {
+  flex: 1;
+  text-align: left;
+}
+
+.home-text h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.home-text h3 {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.home-text p {
+  color: #777;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-image img {
+  max-width: 150%;
+  height: auto;
+  margin-right: -50px;
+  transform: translateX(30px);
+}
+
+/* Media query para responsividad */
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px; /* Ajustamos el padding para móviles */
+  }
+
+  #home {
+    padding-top: 1rem;
+  }
+
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  
+  .home-text {
+    text-align: center;
+  }
+  
+  .home-image {
+    justify-content: center;
+  }
+
+  .home-image img {
+    max-width: 100%;
+    margin-right: 0;
+    transform: translateX(0);
+  }
+}
+
+#content {
+  padding: 2rem;
+  text-align: center;
+}
+
+#content h2 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-section2 {
+  flex: 1;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.content-section2:hover {
+  transform: translateY(-5px);
+}
+
+.content-section2 .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+  
+}
+
+.content-section2 .icon img {
+  width: 64px;
+  height: auto;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+
+.content-section2 .icon img:hover {
+  transform: scale(1.1);
+}
+
+.content-section2 p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+.home-btn-active {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 1.5rem;
+  background: darkorchid;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
+}
+
+.home-btn-active:hover {
+  color: #222;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(183, 121, 241, 0.4);
+  background: linear-gradient(45deg, #60f6d5, #9333ea);
+}
+
+.home-btn-inactive {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: transparent;
+  color: darkorchid;
+  text-decoration: none;
+  border: 2px solid darkorchid;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.home-btn-inactive:hover {
+  color: #222;
+  background: linear-gradient(45deg,  #9333ea ,#60f6d5);
+  transform: translateY(-2px);
+}
+
+/* Media query para responsividad */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .content-section2 {
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* Sección de Curiosidades Gatunas */
+#cat-facts {
+  padding: 30px;
+  background: linear-gradient(135deg, #f6e6ff 0%, #fff2f9 100%);
+  text-align: center;
+}
+
+#cat-facts h2 {
+  padding-top: 20px;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cat-facts-intro {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.oracle-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.oracle-image {
+  flex: 1;
+}
+
+.mystic-cat {
+  max-width: 300px;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(147, 51, 234, 0.3));
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+.mystic-cat:hover {
+  transform: scale(1.05);
+}
+
+.oracle-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card-container {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.oracle-card {
+  background: linear-gradient(45deg, #fa12fe, #c084fc);;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+  border: 2px solid #e6ccff;
+}
+
+.oracle-card:hover {
+  box-shadow: 0 8px 25px rgba(147, 51, 234, 0.2);
+  transform: translateY(-5px) rotateY(10deg);
+}
+
+#fact-display {
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: bo;
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}
+
+.fact-btn {
+  background: linear-gradient(45deg, #45c05f, #61f78b);
+  color: #333;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(247, 71, 191, 0.3);
+}
+
+.fact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(147, 51, 234, 0.4);
+  background: linear-gradient(45deg, #9333ea, #c084fc);
+  color: white;
+}
+
+/* Media query para responsividad */
+@media (max-width: 768px) {
+  .oracle-container {
+    flex-direction: column;
+  }
+
+  .oracle-card {
+    min-height: 120px;
+  }
+
+  .mystic-cat {
+    max-width: 200px;
+  }
+
+  .fact-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Conexión a la API */
+#api-section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#api-section div {
+  width: 1000px;
+  height: 500px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#api-section button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  background: darkorchid;
+  color: antiquewhite;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#api-section button:hover {
+  color: #222;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(183, 121, 241, 0.4);
+  background: linear-gradient(45deg, #60f6d5, #9333ea);
+}
+
+/* Formulario */
+#form {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #444;
+  text-align: left;
+}
+
+input, textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  padding: 10px 100px;
+  background: darkorchid;
+  color: antiquewhite;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: rgb(142, 249, 100);
+  color: #333;
+}
+
+/* Indicadores de validación */
+input.error, textarea.error {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+input.valid, textarea.valid {
+  border: 2px solid green;
+  background-color: #e6ffe6;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: block;
+  text-align: left;
+  font-style: italic;
+}
+
+/* Feedback */
+#form-feedback {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #222;
+  background: rgb(142, 249, 100);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 30px;
+}
+
+/* Footer */
+#content-footer {
+  background: rgb(27, 27, 27);
+  text-align: center;
+  padding: 15px;
+  font-style: italic;
+  margin-top: 30px;
+  color: #fff2f9;
+}
+
+#content-footer div p {
+  margin: 5px 0;
+}
+
+/* Cartel del día del gato */
+.cat-day-reminder {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: linear-gradient(135deg, #9333ea 0%, #c084fc 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(147, 51, 234, 0.2);
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  width: 80%;
+}
+
+.cat-day-reminder:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(147, 51, 234, 0.3);
+}
+
+.cat-day-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  border: 2px dashed rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+.cat-day-text {
+  flex: 2;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.cat-day-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.cat-day-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.cat-day-logo img {
+  width: 120px;
+  height: auto;
+  animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+/* Media query para responsividad */
+@media (max-width: 768px) {
+  .cat-day-reminder {
+    width: 90%;
+  }
+  
+  .cat-day-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .cat-day-text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .cat-day-logo {
+    justify-content: center;
+    padding: 0;
+  }
+}
+
