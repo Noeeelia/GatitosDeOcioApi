@@ -352,6 +352,101 @@ header {
 }
 
 
+/* Cartel del día del gato */
+.cat-day-reminder {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: linear-gradient(135deg, #9333ea 0%, #c084fc 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(147, 51, 234, 0.2);
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  width: 80%;
+}
+
+.cat-day-reminder:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(147, 51, 234, 0.3);
+}
+
+.cat-day-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  border: 2px dashed rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+.cat-day-text {
+  flex: 2;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.cat-day-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.cat-day-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.cat-day-logo img {
+  width: 120px;
+  height: auto;
+  animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+/* Media query para responsividad */
+@media (max-width: 768px) {
+  .cat-day-reminder {
+    width: 90%;
+  }
+  
+  .cat-day-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .cat-day-text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .cat-day-logo {
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+
 /* Sección de Curiosidades Gatunas */
 #cat-facts {
   padding: 30px;
@@ -489,13 +584,10 @@ header {
   text-align: center;
 }
 
-#api-section div {
-  width: 1000px;
-  height: 500px;
-  border-radius: 20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+#cat-img-container {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   margin: 20px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -517,6 +609,14 @@ header {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(183, 121, 241, 0.4);
   background: linear-gradient(45deg, #60f6d5, #9333ea);
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  #cat-img-container {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* Formulario */
@@ -605,6 +705,7 @@ input.valid, textarea.valid {
 
 /* Footer */
 #content-footer {
+  width: 100%;
   background: rgb(27, 27, 27);
   text-align: center;
   padding: 15px;
@@ -616,98 +717,3 @@ input.valid, textarea.valid {
 #content-footer div p {
   margin: 5px 0;
 }
-
-/* Cartel del día del gato */
-.cat-day-reminder {
-  margin: 2rem auto;
-  padding: 1rem;
-  background: linear-gradient(135deg, #9333ea 0%, #c084fc 100%);
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(147, 51, 234, 0.2);
-  transform: translateY(0);
-  transition: all 0.3s ease;
-  width: 80%;
-}
-
-.cat-day-reminder:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(147, 51, 234, 0.3);
-}
-
-.cat-day-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  padding: 1rem;
-  border: 2px dashed rgba(255, 255, 255, 0.6);
-  border-radius: 10px;
-}
-
-.cat-day-text {
-  flex: 2;
-  text-align: left;
-  padding-left: 1rem;
-}
-
-.cat-day-icon {
-  font-size: 1.5rem;
-  display: block;
-  margin-bottom: 0.5rem;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
-
-.cat-day-logo {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 1rem;
-}
-
-.cat-day-logo img {
-  width: 120px;
-  height: auto;
-  animation: floatLogo 3s ease-in-out infinite;
-}
-
-@keyframes floatLogo {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(5deg);
-  }
-}
-
-/* Media query para responsividad */
-@media (max-width: 768px) {
-  .cat-day-reminder {
-    width: 90%;
-  }
-  
-  .cat-day-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .cat-day-text {
-    text-align: center;
-    padding: 0;
-  }
-
-  .cat-day-logo {
-    justify-content: center;
-    padding: 0;
-  }
-}
-

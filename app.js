@@ -15,8 +15,8 @@ btnCat.addEventListener('click', () => {
             //Obtener url de img del gatito
             const catImgUrl = data[0].url;
 
-            //Agregar la imagen como background al container
-            catImgContainer.style.backgroundImage = `url('${catImgUrl}')`;
+            // Crear una imagen y agregarla al contenedor
+            catImgContainer.innerHTML = `<img src="${catImgUrl}" alt="Gatito" style="width: 100%; height: auto; border-radius: 20px;">`;
         })
 
         .catch(error => console.log(error));
