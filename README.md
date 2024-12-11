@@ -2,7 +2,9 @@
 
 ## 🌟 Temática del Sitio
 **Gatitos de Ocio** es una página web de una sola página (OnePage) dedicada a los amantes de los gatos. 
+
 Combina entretenimiento, curiosidades y funcionalidad en un diseño simple pero atractivo. 
+
 Aquí podrás explorar imágenes adorables de gatitos, descubrir datos curiosos a través de un "oráculo felino" y ponerte en contacto con nosotros mediante un formulario interactivo.
 
 ---
@@ -49,15 +51,15 @@ El desarrollo de  🐾 **Gatitos de Ocio** está basado en tecnologías web fund
 ## 📋 Instrucciones para Visualizar el Proyecto
 
 1. Ingresá al siguiente link:
-   - [https://gatitosdeocioapi.netlify.app/](https://gatitosdeocioapi.netlify.app/)
-   - Considero que su interfaz es bastante intuitiva, dejate llevar.
+  - [https://gatitosdeocioapi.netlify.app/](https://gatitosdeocioapi.netlify.app/)
+  - Considero que su interfaz es bastante intuitiva, dejate llevar.
      
 2. Si queres clonar el repositorio aca te dejo, pero te recomiendo descargarlo en zip(archivo comprimido) o hacerle un fork. Así fluyes con tu creatividad y exploras más a profundidad la API.
 
    ```bash
    git clone https://github.com/usuario/GatitosDeOcioApi.git
    ```
-3. 
+   
 ---
 
 ## 🚀 Futuras Mejoras
