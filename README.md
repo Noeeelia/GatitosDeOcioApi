@@ -46,17 +46,23 @@ El desarrollo de  🐾 **Gatitos de Ocio** está basado en tecnologías web fund
 
 ---
 
-## 🚀 Futuras Mejoras
- - Implementar nuevas secciones para juegos o contenido interactivo relacionado con gatos.
- - Añadir más APIs para ampliar las funcionalidades de la página.
-
----
-
 ## 📋 Instrucciones para Visualizar el Proyecto
-1. Clona este repositorio en tu máquina local:  
+
+1. Ingresá al siguiente link:
+   - [https://gatitosdeocioapi.netlify.app/](https://gatitosdeocioapi.netlify.app/)
+   - Considero que su interfaz es bastante intuitiva, dejate llevar.
+     
+2. Si queres clonar el repositorio aca te dejo, pero te recomiendo descargarlo en zip(archivo comprimido) o hacerle un fork. Así fluyes con tu creatividad y exploras más a profundidad la API.
+
    ```bash
    git clone https://github.com/usuario/GatitosDeOcioApi.git
    ```
+3. 
+---
+
+## 🚀 Futuras Mejoras
+ - Implementar nuevas secciones para juegos o contenido interactivo relacionado con gatos.
+ - Añadir más APIs para ampliar las funcionalidades de la página.
 
 ---
 
