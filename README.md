@@ -8,21 +8,21 @@ Aquí podrás explorar imágenes adorables de gatitos, descubrir datos curiosos 
 ---
 
 ## 🛠️ Funcionalidades Principales
-*** 1. **Inicio**  
+1. **Inicio**  
    Una portada que da la bienvenida al visitante, con dos botones:  
    - Uno activo que te redirije a la sección que te mostrará imágenes de gatitos.  
    - Otro inactivo que te redirije a la sección que te mostrará curiosidades sobre gatos.  
 
-*** 2. **Contenido**  
+2. **Contenido**  
    Sección que explica de manera breve y amigable el propósito y alcance de la página. Y te indica que ¡Estás en el lugar indicado! 😺
 
-*** 3. **Curiosidades**  
+3. **Curiosidades**  
    Aquí encontraras un tipo de "Oráculo Felino" que genera datos curiosos sobre los gatos. Ideal para aprender mientras te diviertes.
 
-*** 4. **Gatitos**  
+4. **Gatitos**  
    Esta es la sección donde esta la conexión con ***TheCatAPI*** que muestra imágenes aleatorias y adorables de gatos cada vez que lo desees.
 
-*** 5. **Contacto**  
+5. **Contacto**  
    Formulario de contacto con validaciones en JavaScript para garantizar que los datos ingresados sean correctos.
 
 ---
@@ -34,7 +34,7 @@ Para obtener una imagen aleatoria copy el link y pegue el el navegador de su pre
 https://api.thecatapi.com/v1/images/search
 ```
 
-En este caso podra hacerlo desde la onePage en la que hemos estado explorando y creando. Esperemos sea de su agrado. Es muy simple de utilizar
+En este caso podra hacerlo desde la onePage en la que hemos estado explorando y creando. Esperemos sea de su agrado. Es muy simple de utilizar.
 
 ---
 
