@@ -2,7 +2,9 @@
 
 ## 🌟 Temática del Sitio
 **Gatitos de Ocio** es una página web de una sola página (OnePage) dedicada a los amantes de los gatos. 
+
 Combina entretenimiento, curiosidades y funcionalidad en un diseño simple pero atractivo. 
+
 Aquí podrás explorar imágenes adorables de gatitos, descubrir datos curiosos a través de un "oráculo felino" y ponerte en contacto con nosotros mediante un formulario interactivo.
 
 ---
@@ -10,8 +12,8 @@ Aquí podrás explorar imágenes adorables de gatitos, descubrir datos curiosos 
 ## 🛠️ Funcionalidades Principales
 1. **Inicio**  
    Una portada que da la bienvenida al visitante, con dos botones:  
-   - Uno activo que te redirije a la sección que te mostrará imágenes de gatitos.  
-   - Otro inactivo que te redirije a la sección que te mostrará curiosidades sobre gatos.  
+  - Uno activo que te redirije a la sección que te mostrará imágenes de gatitos.  
+  - Otro inactivo que te redirije a la sección que te mostrará curiosidades sobre gatos.  
 
 2. **Contenido**  
    Sección que explica de manera breve y amigable el propósito y alcance de la página. Y te indica que ¡Estás en el lugar indicado! 😺
@@ -29,7 +31,10 @@ Aquí podrás explorar imágenes adorables de gatitos, descubrir datos curiosos 
 
 ## 🔗 API Utilizada
 Se utilizó la **TheCatAPI** para obtener imágenes de gatos de manera dinámica. Puedes encontrar más información sobre esta API en: [https://api.thecatapi.com/](https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t)
-Para obtener una imagen aleatoria copy el link y pegue el el navegador de su preferencia, sera diriguido a una pagina con formato JSON y ahi encontrara la imagen.
+
+Para obtener una imagen aleatoria copy el link y pegue el navegador de su preferencia, sera diriguido a una pagina con formato JSON y ahi encontrara un link a la imagen.
+
+**Endpoint utilizado**
 ```bash
 https://api.thecatapi.com/v1/images/search
 ```
@@ -46,17 +51,23 @@ El desarrollo de  🐾 **Gatitos de Ocio** está basado en tecnologías web fund
 
 ---
 
-## 🚀 Futuras Mejoras
- - Implementar nuevas secciones para juegos o contenido interactivo relacionado con gatos.
- - Añadir más APIs para ampliar las funcionalidades de la página.
-
----
-
 ## 📋 Instrucciones para Visualizar el Proyecto
-1. Clona este repositorio en tu máquina local:  
+
+1. Ingresá al siguiente link:
+  - [https://gatitosdeocioapi.netlify.app/](https://gatitosdeocioapi.netlify.app/)
+  - Considero que su interfaz es bastante intuitiva, dejate llevar.
+     
+2. Si queres clonar el repositorio aca te dejo, pero te recomiendo descargarlo en zip(archivo comprimido) o hacerle un fork. Así fluyes con tu creatividad y exploras más a profundidad la API.
+
    ```bash
    git clone https://github.com/usuario/GatitosDeOcioApi.git
    ```
+   
+---
+
+## 🚀 Futuras Mejoras
+ - Implementar nuevas secciones para juegos o contenido interactivo relacionado con gatos.
+ - Añadir más APIs para ampliar las funcionalidades de la página.
 
 ---
 
