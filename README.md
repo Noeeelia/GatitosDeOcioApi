@@ -1,26 +1,28 @@
 # 🐾 Gatitos de Ocio: Una OnePage de Gatitos 🐾
 
 ## 🌟 Temática del Sitio
-**Gatitos de Ocio** es una página web de una sola página (OnePage) dedicada a los amantes de los gatos. Combina entretenimiento, curiosidades y funcionalidad en un diseño simple pero atractivo. Aquí podrás explorar imágenes adorables de gatitos, descubrir datos curiosos a través de un "oráculo felino" y ponerte en contacto con nosotros mediante un formulario interactivo.
+**Gatitos de Ocio** es una página web de una sola página (OnePage) dedicada a los amantes de los gatos. 
+Combina entretenimiento, curiosidades y funcionalidad en un diseño simple pero atractivo. 
+Aquí podrás explorar imágenes adorables de gatitos, descubrir datos curiosos a través de un "oráculo felino" y ponerte en contacto con nosotros mediante un formulario interactivo.
 
 ---
 
 ## 🛠️ Funcionalidades Principales
-***1. **Inicio**  
+*** 1. **Inicio**  
    Una portada que da la bienvenida al visitante, con dos botones:  
    - Uno activo que te redirije a la sección que te mostrará imágenes de gatitos.  
    - Otro inactivo que te redirije a la sección que te mostrará curiosidades sobre gatos.  
 
-***2. **Contenido**  
+*** 2. **Contenido**  
    Sección que explica de manera breve y amigable el propósito y alcance de la página. Y te indica que ¡Estás en el lugar indicado! 😺
 
-***3. **Curiosidades**  
+*** 3. **Curiosidades**  
    Aquí encontraras un tipo de "Oráculo Felino" que genera datos curiosos sobre los gatos. Ideal para aprender mientras te diviertes.
 
-***4. **Gatitos**  
+*** 4. **Gatitos**  
    Esta es la sección donde esta la conexión con ***TheCatAPI*** que muestra imágenes aleatorias y adorables de gatos cada vez que lo desees.
 
-***5. **Contacto**  
+*** 5. **Contacto**  
    Formulario de contacto con validaciones en JavaScript para garantizar que los datos ingresados sean correctos.
 
 ---
@@ -31,6 +33,7 @@ Para obtener una imagen aleatoria copy el link y pegue el el navegador de su pre
 ```bash
 https://api.thecatapi.com/v1/images/search
 ```
+
 En este caso podra hacerlo desde la onePage en la que hemos estado explorando y creando. Esperemos sea de su agrado. Es muy simple de utilizar
 
 ---
@@ -53,7 +56,7 @@ El desarrollo de  🐾 **Gatitos de Ocio** está basado en tecnologías web fund
 1. Clona este repositorio en tu máquina local:  
    ```bash
    git clone https://github.com/usuario/GatitosDeOcioApi.git
-   ```bash
+   ```
 
 ---
 
@@ -64,5 +67,7 @@ El desarrollo de  🐾 **Gatitos de Ocio** está basado en tecnologías web fund
 
 ## 🐱 Licencia
 Este proyecto se encuentra bajo la Licencia de **MICHILANDIA**.
+
+---
 
 ### ¡Explora, diviértete y comparte la magia de los gatos con  🐾 **Gatitos de Ocio**! 😺✨
