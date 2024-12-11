@@ -586,7 +586,10 @@ header {
 
 #cat-img-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
   height: auto;
   margin: 20px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
