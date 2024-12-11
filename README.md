@@ -12,8 +12,8 @@ Aquí podrás explorar imágenes adorables de gatitos, descubrir datos curiosos 
 ## 🛠️ Funcionalidades Principales
 1. **Inicio**  
    Una portada que da la bienvenida al visitante, con dos botones:  
-   - Uno activo que te redirije a la sección que te mostrará imágenes de gatitos.  
-   - Otro inactivo que te redirije a la sección que te mostrará curiosidades sobre gatos.  
+  - Uno activo que te redirije a la sección que te mostrará imágenes de gatitos.  
+  - Otro inactivo que te redirije a la sección que te mostrará curiosidades sobre gatos.  
 
 2. **Contenido**  
    Sección que explica de manera breve y amigable el propósito y alcance de la página. Y te indica que ¡Estás en el lugar indicado! 😺
@@ -31,7 +31,10 @@ Aquí podrás explorar imágenes adorables de gatitos, descubrir datos curiosos 
 
 ## 🔗 API Utilizada
 Se utilizó la **TheCatAPI** para obtener imágenes de gatos de manera dinámica. Puedes encontrar más información sobre esta API en: [https://api.thecatapi.com/](https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t)
-Para obtener una imagen aleatoria copy el link y pegue el el navegador de su preferencia, sera diriguido a una pagina con formato JSON y ahi encontrara la imagen.
+
+Para obtener una imagen aleatoria copy el link y pegue el navegador de su preferencia, sera diriguido a una pagina con formato JSON y ahi encontrara un link a la imagen.
+
+**Endpoint utilizado**
 ```bash
 https://api.thecatapi.com/v1/images/search
 ```
