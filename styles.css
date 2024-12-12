@@ -671,7 +671,7 @@ button {
 }
 
 button:hover {
-  background: rgb(142, 249, 100);
+  background: pink;
   color: #333;
 }
 
