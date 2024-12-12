@@ -6,6 +6,7 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #fef5fc;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -625,8 +626,7 @@ header {
 /* Formulario */
 #form {
   max-width: 600px;
-  margin: auto;
-  margin-top: 30px;
+  margin: 20px auto;
   background: white;
   padding: 20px;
   text-align: center;
