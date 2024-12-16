@@ -205,9 +205,9 @@ header {
 }
 
 .home-image img {
-  max-width: 100%;
+  max-width: 150%;
   height: auto;
-  margin-right: -50px;
+  /* margin-right: -50px; */
   transform: translateX(30px);
 }
 
