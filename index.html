@@ -107,6 +107,9 @@
   <!-- Sección del Formulario -->
   <section id="form">
     <h2>Contactanos</h2>
+    <p>¿Tienes alguna duda, sugerencia o simplemente quieres saludar?</p>
+    <p>¡Déjanos tu mensaje! 😸</p>
+    <br>
     <form id="contact-form" action="https://formsubmit.co/ spiritu.design@gmail.com " method="POST">
       <label for="name">Nombre:</label>
       <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
@@ -123,6 +126,9 @@
       <span class="error" id="message-error"></span>
 
       <button type="submit">Enviar</button>
+
+      <input type="hidden" name="_next" value="https://gatitosdeocioapi.netlify.app/#home">
+      
     </form>
     <p id="form-feedback"></p>
   </section>
