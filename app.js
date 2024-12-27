@@ -102,21 +102,26 @@ document.addEventListener("DOMContentLoaded", () => {
   messageInput.addEventListener("input", validateMessage);
 
   // Validar el formulario al enviar
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const isNameValid = validateName();
-    const isEmailValid = validateEmail();
-    const isMessageValid = validateMessage();
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
 
-    if (isNameValid && isEmailValid && isMessageValid) {
-      document.getElementById("form-feedback").textContent = "Formulario enviado exitosamente.";
-      form.reset();
-      nameInput.style.backgroundColor = "";
-      emailInput.style.backgroundColor = "";
-      messageInput.style.backgroundColor = "";
-    } else {
-      document.getElementById("form-feedback").textContent = "Por favor, corrige los errores antes de enviar.";
-    }
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const isNameValid = validateName();
+      const isEmailValid = validateEmail();
+      const isMessageValid = validateMessage();
+  
+      if (isNameValid && isEmailValid && isMessageValid) {
+        form.submit();
+        document.getElementById("form-feedback").textContent = "Formulario enviado exitosamente.";
+        form.reset();
+        nameInput.style.backgroundColor = "";
+        emailInput.style.backgroundColor = "";
+        messageInput.style.backgroundColor = "";
+      } else {
+        document.getElementById("form-feedback").textContent = "Por favor, corrige los errores antes de enviar.";
+      }
+    })
   });
 });
 

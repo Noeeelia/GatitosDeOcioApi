@@ -110,7 +110,8 @@
     <p>¿Tienes alguna duda, sugerencia o simplemente quieres saludar?</p>
     <p>¡Déjanos tu mensaje! 😸</p>
     <br>
-    <form id="contact-form" name="contact" method="POST" netlify>
+    <form id="contact-form" name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
       <label for="name">Nombre:</label>
       <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
       <span class="error" id="name-error"></span>
